@@ -74,7 +74,7 @@ ununifid init "$MONIKER" --chain-id $CHAIN_ID
 ```
 ### Download genesis
 ```Bash
-rm ~/.ununifi/config/genesis.json && \
+rm ~/.ununifi/config/genesis.json
 curl -L https://raw.githubusercontent.com/UnUniFi/network/main/launch/ununifi-beta-v1/genesis.json -o ~/.ununifi/config/genesis.json
 ```
 ### Config app
