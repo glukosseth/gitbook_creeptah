@@ -244,7 +244,8 @@ ununifid tx staking edit-validator \
 --website=<web> \
 --details=<any details> \
 --chain-id $CHAIN_ID \
---from=<wallet_name>
+--from=<wallet_name> \
+--gas-prices 0.025uguu
 ```
 ##### Unjail validator
 ```Bash
