@@ -19,7 +19,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 ### Install dependencies
 ```Bash
-sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu gcc git jq chrony liblz4-tool -y
+sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git ncdu git jq liblz4-tool -y
 ```
 ### Install go
 ```Bash
