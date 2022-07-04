@@ -33,13 +33,13 @@ go version
 ### Download and build binaries
 ```Bash
 cd $HOME
-git clone --depth 1 --branch public-testnet-v2 https://github.com/stafihub/stafihub
+git clone --depth 1 --branch public-testnet-v3 https://github.com/stafihub/stafihub
 cd stafihub
 make install
 ```
 ### Init app
 ```Bash
-stafihubd init <moniker> --chain-id stafihub-public-testnet-2
+stafihubd init <moniker> --chain-id stafihub-public-testnet-3
 ```
 ### Download genesis
 ```Bash
@@ -113,7 +113,7 @@ sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:$
 ```
 Change laddr adress 127.0.0.1 to 0.0.0.0 (optional)
 ```Bash
-STAFI_PRPC=$(grep -A 3 "\[rpc\]" ~/.stafihubd/config/config.toml | egrep -o ":[0-9]+") && \
+STAFI_PRPC=$(grep -A 3 "\[rpc\]" ~/.stafihubd/config/config.toml | egrep -o ":[0-9]+")
 sed -i.bak -e "s%^laddr = \"tcp://127.0.0.1:$(STAFI_PRPC)\"%laddr = \"tcp://0.0.0.0:$(STAFI_PRPC)\"%" $HOME/.stafihubd/config/config.toml
 ```
 Enable prometheus (optional)
@@ -180,7 +180,7 @@ stafihubd tx staking create-validator \
   --min-self-delegation "1" \
   --pubkey=$(stafihubd tendermint show-validator) \
   --moniker <moniker> \
-  --chain-id=stafihub-public-testnet-2 \
+  --chain-id=stafihub-public-testnet-3 \
   --gas-prices=0.025ufis \
   --keyring-backend file
 ```
@@ -217,19 +217,19 @@ stafihubd tx bank send <wallet_address> <to_wallet_address> 10000000uqck --keyri
 ```
 ##### Voting
 ```Bash
-stafihubd tx gov vote 1 yes --from <wallet_name> --chain-id=stafihub-public-testnet-2 --keyring-backend file
+stafihubd tx gov vote 1 yes --from <wallet_name> --chain-id=stafihub-public-testnet-3 --keyring-backend file
 ```
 ##### Delegate stake
 ```Bash
-stafihubd tx staking delegate <valoper_address> 10000000ufis --from=<wallet_name> --chain-id=stafihub-public-testnet-2 --gas=auto --keyring-backend file
+stafihubd tx staking delegate <valoper_address> 10000000ufis --from=<wallet_name> --chain-id=stafihub-public-testnet-3 --gas=auto --keyring-backend file
 ```
 ##### Withdraw all rewards
 ```Bash
-stafihubd tx distribution withdraw-all-rewards --from=<wallet_name> --chain-id=stafihub-public-testnet-2 --gas=auto --keyring-backend file
+stafihubd tx distribution withdraw-all-rewards --from=<wallet_name> --chain-id=stafihub-public-testnet-3 --gas=auto --keyring-backend file
 ```
 ##### Withdraw rewards with commision
 ```Bash
-stafihubd tx distribution withdraw-rewards <valoper_address> --from=<wallet_name> --commission --chain-id=stafihub-public-testnet-2 --gas=auto --keyring-backend file
+stafihubd tx distribution withdraw-rewards <valoper_address> --from=<wallet_name> --commission --chain-id=stafihub-public-testnet-3 --gas=auto --keyring-backend file
 ```
 ##### Edit validator
 ```Bash
@@ -238,7 +238,7 @@ stafihubd tx staking edit-validator \
 --identity=<identity> \
 --website=<web> \
 --details=<any details> \
---chain-id=stafihub-public-testnet-2 \
+--chain-id=stafihub-public-testnet-3 \
 --from=<wallet_name> \
 --gas-prices=0.025ufis \
 --keyring-backend file
@@ -249,17 +249,17 @@ stafihubd tx staking edit-validator \
 stafihubd tx slashing unjail \
   --broadcast-mode=block \
   --from=<wallet_name> \
-  --chain-id=stafihub-public-testnet-2 \
+  --chain-id=stafihub-public-testnet-3 \
   --gas-prices=0.025ufis \
   --keyring-backend file
 
 ```
 ##### Delete node
 ```Bash
-sudo systemctl stop stafihubd
-sudo systemctl disable stafihubd
-sudo rm /etc/systemd/system/stafihubd* -rf
-sudo rm $(which stafihubd) -rf
-sudo rm $HOME/.stafihubd* -rf
+sudo systemctl stop stafihubd && \
+sudo systemctl disable stafihubd && \
+sudo rm /etc/systemd/system/stafihubd* -rf && \
+sudo rm $(which stafihubd) -rf && \
+sudo rm $HOME/.stafihubd* -rf && \
 sudo rm $HOME/stafihub -rf
 ```
