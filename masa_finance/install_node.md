@@ -30,21 +30,21 @@ go version
 ```
 ### Download and build binaries
 ```Bash
-cd $HOME
-rm -rf masa-node-v1.0
-git clone https://github.com/masa-finance/masa-node-v1.0
-cd $HOME/masa-node-v1.0/src
-git checkout v1.03
+cd $HOME && \
+rm -rf masa-node-v1.0 && \
+git clone https://github.com/masa-finance/masa-node-v1.0 && \
+cd $HOME/masa-node-v1.0/src && \
+git checkout v1.03 && \
 make all
 ```
 ### Copy binaries
 ```Bash
-cd $HOME/masa-node-v1.0/src/build/bin
+cd $HOME/masa-node-v1.0/src/build/bin && \
 sudo cp * /usr/local/bin
 ```
 ### Init app
 ```Bash
-cd $HOME/masa-node-v1.0
+cd $HOME/masa-node-v1.0 && \
 geth --datadir data init ./network/testnet/genesis.json
 ```
 ### Set node name
@@ -85,8 +85,8 @@ EOF
 ```
 ### Register and start service
 ```Bash
-sudo systemctl daemon-reload
-sudo systemctl enable masad
+sudo systemctl daemon-reload && \
+sudo systemctl enable masad && \
 sudo systemctl start masad && sudo journalctl -u masad -f -o cat
 ```
 Usefull command
@@ -114,7 +114,6 @@ net.listening
 admin.datadir
 
 # List connection (short list)
-
 admin.peers.forEach(function(value){console.log(value.network.remoteAddress+"\t"+value.name)})
 
 # List connection (long list)
