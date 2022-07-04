@@ -45,7 +45,7 @@ sudo cp * /usr/local/bin
 ### Init app
 ```Bash
 cd $HOME/masa-node-v1.0
-geth --datadir data init ./network/testnet/genesis.jso
+geth --datadir data init ./network/testnet/genesis.json
 ```
 ### Set node name
 ```Bash
