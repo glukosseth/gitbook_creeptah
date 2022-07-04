@@ -93,6 +93,7 @@ Usefull command
 =
 ### Status ETH node
 ```Bash
+cd $HOME/masa-node-v1.0 && \
 geth attach ipc:$HOME/masa-node-v1.0/data/geth.ipc
 ```
 ##### Console commands
