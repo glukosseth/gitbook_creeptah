@@ -34,7 +34,7 @@ go version
 ```Bash
 cd $HOME
 rm quicksilver -rf
-git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.0
+git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.1
 cd quicksilver
 make build
 sudo chmod +x ./build/quicksilverd && sudo mv ./build/quicksilverd /usr/local/bin/quicksilverd
