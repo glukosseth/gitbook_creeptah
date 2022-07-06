@@ -263,7 +263,7 @@ wget -qO optimize-configs.sh https://raw.githubusercontent.com/sei-protocol/test
 sudo chmod +x optimize-configs.sh && ./optimize-configs.sh
 sudo systemctl restart seid && sudo journalctl -u seid -f -o cat
 ```
-### Update new version 1.0.6 on block hight 1,217,302
+### Update new version 1.0.6 on block height 1,217,302
 ```Bash
 sudo systemctl stop seid && cd sei-chain
 git pull
