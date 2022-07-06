@@ -107,7 +107,11 @@ sudo mv /etc/telegraf/telegraf.conf.sample /etc/telegraf/telegraf.conf.sample.ba
 wget -O telegraf.conf https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/ununifi/monitoring/telegraf.conf
 chmod +x telegraf.conf && sudo mv $HOME/telegraf.conf /etc/telegraf/telegraf.conf
 ```
-Open `telegraf.conf` and replace
+Open `telegraf.conf`
+```Bash
+sudo nano /etc/telegraf/telegraf.conf
+```
+and replace
 ```Bash
 <node_name> - server-hostname with your valid hostname
 <database_name> - database-name with InfluxDB database nae for this host
