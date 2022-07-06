@@ -104,7 +104,8 @@ Download config `telegraf.conf`
 ```Bash
 sudo mv /etc/telegraf/telegraf.conf /etc/telegraf/telegraf.conf.bak
 sudo mv /etc/telegraf/telegraf.conf.sample /etc/telegraf/telegraf.conf.sample.bak
-wget -O telegraf.conf https:// && chmod +x telegraf.conf && sudo mv $HOME/telegraf.conf /etc/telegraf/telegraf.conf
+wget -O telegraf.conf [https://](https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/ununifi/monitoring/telegraf.conf)
+chmod +x telegraf.conf && sudo mv $HOME/telegraf.conf /etc/telegraf/telegraf.conf
 ```
 Open `telegraf.conf` and replace
 ```Bash
