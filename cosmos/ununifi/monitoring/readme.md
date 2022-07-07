@@ -53,7 +53,7 @@ Under InfluxDB Details, provide:
 
 Once the data source has been added, the next thing is to import the dashboard. I customized one of the dashboards initially created by a user on the community and uploaded it.
 
-Download the dashboard from [here](https://github.com/glukosseth/testnet_guide/blob/a3fb6176deafe0567bce9c146041a425bdbd1863/cosmos/ununifi/monitoring/ununifi.json), it is in JSON format. The head over to `Create > Import`:
+Download the dashboard from [here](https://github.com/glukosseth/testnet_guide/blob/main/cosmos/ununifi/monitoring/ununifi.json), it is in JSON format. The head over to `Create > Import`:
 
 ![un7](https://user-images.githubusercontent.com/108256873/177771367-2c3bf456-fdef-4bf4-a036-b744141b7b4c.png)
 
