@@ -1,1 +1,65 @@
-1
+![un1](https://user-images.githubusercontent.com/108256873/177755485-69c968bf-93d3-419d-afef-7f240354daf8.png)
+
+# Monitor UnUniFi validator node with Grafana and Telegraf
+In this guide, we’re going to look at how to Monitor an UnUniFi validator node with Grafana and Telegraf.
+
+Telegraf is an agent written in Go for collecting performance metrics from the system it’s running on and the services running on that system. The collected metrics are output to InfluxDB or other supported data stores. From InfluxDB, you should be able to visualize trends and systems performance using tools like Grafana.
+
+Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus, and InfluxDB.
+
+![un2](https://user-images.githubusercontent.com/108256873/177758191-b203ea07-6455-4517-b972-ae91c42ab8ff.png)
+
+## 1. Install Telegraf, InfluxDB, Grafana
+
+For installation you can use this [guide](https://github.com/glukosseth/testnet_guide/blob/main/cosmos/ununifi/monitoring/install_guide.md)
+
+## 2. Configure Grafana
+
+### Access Grafana Dashboard
+
+Access Grafana Dashboard using the server IP address or hostname and port `3000`.
+
+![un3](https://user-images.githubusercontent.com/108256873/177762799-43a181c5-23d7-4126-a95a-2cc926c9aab5.png)
+
+Default logins are:
+- Usermane: `admin`
+- Password: `admin`
+
+### Change Admin Password
+
+Remember to change admin password from default admin. Login and navigate to `Preferences > Change Password`:
+
+![un4](https://user-images.githubusercontent.com/108256873/177764651-46a2025e-ad6a-4b33-87a5-2ad39cefa866.png)
+
+### Add an InfluxDB data source
+
+Before add a dashboard to Grafana for Telegraf system metrics, you need to first import the data source. \
+Login to Grafana and go to `Configuration > Data Sources > Add data source > InfluxDB`.
+
+Provide the following details:
+- Name – Any valid name
+- HTTP URL: InfluxDB URL address e.g http://localhost:8086 for local db server (`<grafana_ip>`)
+
+![un5](https://user-images.githubusercontent.com/108256873/177767304-e1dac037-64e6-4ec5-b1cc-92445eb127f4.png)
+
+Under InfluxDB Details, provide:
+
+- Database name as defined on telegraf configuration file (`<database_name>`)
+- HTTP authentication username and password as configured on telegraf (`<database_login>`, `<database_password>`)
+
+![un6](https://user-images.githubusercontent.com/108256873/177768295-0ca97901-d7bc-4db9-993e-f8adcd91df5f.png)
+
+### Importing Grafana Dashboard
+
+Once the data source has been added, the next thing is to import the dashboard. I customized one of the dashboards initially created by a user on the community and uploaded it.
+
+Download the dashboard from [here](https://github.com/glukosseth/testnet_guide/blob/a3fb6176deafe0567bce9c146041a425bdbd1863/cosmos/ununifi/monitoring/ununifi.json), it is in JSON format. The head over to `Create > Import`:
+
+![un7](https://user-images.githubusercontent.com/108256873/177771367-2c3bf456-fdef-4bf4-a036-b744141b7b4c.png)
+
+Under Options section, give it a unique name and select data source added earlier from the drop-down menu and click the import button.
+
+You should see Metrics being visualized immediately.
+
+![un8](https://user-images.githubusercontent.com/108256873/177787408-57ca2e23-bf88-45fd-8601-b84b41fe89dc.png)
+
