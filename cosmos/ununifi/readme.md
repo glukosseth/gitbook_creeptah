@@ -2,3 +2,8 @@
 
 UnUniFi
 =
+UnUniFi Protocol is a decentralized finance(DeFi) platform that provides tools and features that allow users to create a collateralized deposit position, like that of MakerDAO, to synthesize a number of assets pegged to legal currency, real-life assets, like stocks or commodities, crypto assets, and index of tokens,etc.
+#
+[web](https://ununifi.io/) \
+[medium](https://medium.com/@ununifi) \
+[twitter](https://twitter.com/ununifi)
