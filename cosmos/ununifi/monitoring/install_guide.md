@@ -123,9 +123,19 @@ Once all changes have been made, you can restart the telegraf service
 ```Bash
 sudo systemctl restart telegraf && sudo journalctl -u telegraf -f -o cat
 ```
-Enable prometheus
+Enable prometheus. Configure `config.toml` and edit three options:
+- prometheus = true
+- prometheus_listen_addr = “127.0.0.1:26660” 
+- namespace = “tendermint”
+
+![u11](https://user-images.githubusercontent.com/108256873/177996020-44fc90fc-4c2b-4d5f-be7d-4e82a63ae65b.png)
+
+Restart service `ununifid`
 ```Bash
-sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.ununifi/config/config.toml
+sudo systemctl restart ununifid
+
+# if installed cosmovisor
+sudo systemctl restart cosmovisor
 ```
 Install Grafana
 =
