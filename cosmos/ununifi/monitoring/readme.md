@@ -40,7 +40,7 @@ Provide the following details:
 - Name – Any valid name
 - HTTP URL: InfluxDB URL address e.g http://localhost:8086 for local db server (`<grafana_ip>`)
 
-![un5](https://user-images.githubusercontent.com/108256873/177767304-e1dac037-64e6-4ec5-b1cc-92445eb127f4.png)
+![un5](https://user-images.githubusercontent.com/108256873/177983992-85dca0c4-efe8-47f4-b44b-982fb4064c25.png)
 
 Under InfluxDB Details, provide:
 
@@ -59,7 +59,10 @@ Download the dashboard from [here](https://github.com/glukosseth/testnet_guide/b
 
 Under Options section, give it a unique name and select data source added earlier from the drop-down menu and click the import button.
 
+Set/check your `datasource` and `Server`:
+
+![un8](https://user-images.githubusercontent.com/108256873/177982971-012d96f4-e1f7-4b7e-9984-230434f6ed10.png)
+
 You should see Metrics being visualized immediately.
 
-![un8](https://user-images.githubusercontent.com/108256873/177787408-57ca2e23-bf88-45fd-8601-b84b41fe89dc.png)
-
+![un10](https://user-images.githubusercontent.com/108256873/177983134-61ad46ae-2422-49f5-a70a-5beb78bd7a79.png)
