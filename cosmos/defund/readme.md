@@ -1,4 +1,7 @@
-![](https://www.defund.app/images/Defund%20(13).png)
+![pic](https://user-images.githubusercontent.com/108256873/178106623-e1227b90-36cf-4287-8043-461784f69334.png)
+
+DeFund
+=
 DeFund Finance: an application-specific blockchain to serve one purpose — help crypto enthusiasts grow their wealth over time. DeFund allows for the creation of decentralized exchange-traded funds (formally called dETF’s) with underlying assets from dozens and dozens of blockchains.
 
 DeFund is built with best-in-class technology from the start. Utilizing IBC, DeFund is able to leverage tokenized assets from any IBC enabled chain including Ethereum (using the recent Gravity Bridge blockchain) and Bitcoin (potentially using the Nomic protocol). With the ability to combine your choice of hundreds of tokenized assets into exchange-traded portfolios, the possibilities on DeFund are limitless.
