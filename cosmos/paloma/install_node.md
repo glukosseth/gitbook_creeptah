@@ -116,11 +116,6 @@ sed -i.bak -e "s%^node = \"tcp://localhost:26657\"%node = \"tcp://localhost:${PA
 external_address=$(wget -qO- eth0.me) && \
 sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:${PALOMA_PORT}656\"/" $HOME/.paloma/config/config.toml
 ```
-Change laddr adress 127.0.0.1 to 0.0.0.0 (optional)
-```Bash
-PALOMA_PRPC=$(grep -A 3 "\[rpc\]" ~/.paloma/config/config.toml | egrep -o ":[0-9]+") && \
-sed -i.bak -e "s%^laddr = \"tcp://127.0.0.1:$(PALOMA_PRPC)\"%laddr = \"tcp://0.0.0.0:$(PALOMA_PRPC)\"%" $HOME/.paloma/config/config.toml
-```
 Enable prometheus (optional)
 ```Bash
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.paloma/config/config.toml
