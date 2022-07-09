@@ -111,11 +111,6 @@ sed -i.bak -e "s%^node = \"tcp://localhost:26657\"%node = \"tcp://localhost:${ST
 external_address=$(wget -qO- eth0.me) && \
 sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:${STAFI_PORT}656\"/" $HOME/.stafihub/config/config.toml
 ```
-Change laddr adress 127.0.0.1 to 0.0.0.0 (optional)
-```Bash
-STAFI_PRPC=$(grep -A 3 "\[rpc\]" ~/.stafihubd/config/config.toml | egrep -o ":[0-9]+")
-sed -i.bak -e "s%^laddr = \"tcp://127.0.0.1:$(STAFI_PRPC)\"%laddr = \"tcp://0.0.0.0:$(STAFI_PRPC)\"%" $HOME/.stafihubd/config/config.toml
-```
 Enable prometheus (optional)
 ```Bash
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.stafihub/config/config.toml
