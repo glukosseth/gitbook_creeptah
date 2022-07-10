@@ -66,3 +66,15 @@ Set/check your `datasource` and `Server`:
 You should see Metrics being visualized immediately.
 
 ![un10](https://user-images.githubusercontent.com/108256873/177983134-61ad46ae-2422-49f5-a70a-5beb78bd7a79.png)
+
+## 3. Parameters
+
+You can deploy your own database or use *[creeptah.team]* database for `telegraf.conf`:
+
+- <node_name>: name of UnUniFi Validator
+- <grafana_ip>: `45.140.146.29:8086`
+- <database_name>: `ununifi_db`
+- <database_login>: `ununifi`
+- <database_password>: `ununifi`
+
+Link for Grafana Dashboard is [here](http://45.140.146.29:3000/d/Z-2kYJe7z/ununifi?orgId=3&refresh=5s)
