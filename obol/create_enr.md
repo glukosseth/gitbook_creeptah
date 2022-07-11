@@ -1,5 +1,8 @@
 # Charon Distributed Validator Node
 
+##### Official documentation:
+> [Validator setup instructions](https://github.com/ObolNetwork/charon-distributed-validator-node#step-2-leader-creates-the-dkg-configuration-file-and-distributes-it-to-everyone-else)
+
 ## Creating and backing up a private key for charon
 
 ### Update packages
