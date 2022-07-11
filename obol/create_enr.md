@@ -1,6 +1,6 @@
 # Charon Distributed Validator Node
 
-## Step 1. Creating and backing up a private key for charon
+## Creating and backing up a private key for charon
 
 ### Update packages
 ```Bash
