@@ -250,3 +250,21 @@ sudo rm $(which quicksilverd) -rf
 sudo rm $HOME/.quicksilverd* -rf
 sudo rm $HOME/quicksilver -rf
 ```
+
+Update guide
+=
+### Update new version 0.4.2 on block height 212,000
+```Bash
+sudo systemctl stop quicksilverd && \
+cd $HOME && \
+sudo rm quicksilver -rf && \
+git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.4.2 && \
+cd quicksilver && \
+make build && \
+sudo chmod +x ./build/quicksilverd && sudo mv ./build/quicksilverd /usr/local/bin/quicksilverd
+
+quicksilverd version --long | head
+# version 0.4.2
+
+sudo systemctl restart quicksilverd && sudo journalctl -u quicksilverd -f -o cat
+```
