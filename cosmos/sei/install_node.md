@@ -41,9 +41,9 @@ make install
 ```Bash
 seid init <moniker> --chain-id atlantic-1
 ```
-### Download genesis and addrbook
+### Download genesis
 ```Bash
-wget -O $HOME/.sei/config/genesis.json "https://github.com/sei-protocol/testnet/blob/main/sei-incentivized-testnet/genesis.json"
+curl https://raw.githubusercontent.com/sei-protocol/testnet/master/sei-incentivized-testnet/genesis.json > ~/.sei/config/genesis.json
 ```
 ### Config app
 Setup seeds and peers
