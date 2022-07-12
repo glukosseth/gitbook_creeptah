@@ -171,7 +171,7 @@ seid tx staking create-validator \
 --amount 1000000usei \
 --pubkey $(seid tendermint show-validator) \
 --moniker "<moniker>" \
---from <wallet_name> \
+--from <wallet_name>
 ```
 ### Show address validator
 ```Bash
