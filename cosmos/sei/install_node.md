@@ -55,7 +55,7 @@ sed -i "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/;" $HOME/.sei/con
 ```
 Set min gas price
 ```Bash
-sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.0025usei\"/;" ~/.sei/config/app.toml
+sed -i.bak -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0usei\"/;" $HOME/.sei/config/app.toml
 ```
 Increase numbers of peers for connect, ex. persistens peers in `config.toml`
 ```Bash
@@ -172,7 +172,6 @@ seid tx staking create-validator \
 --pubkey $(seid tendermint show-validator) \
 --moniker "<moniker>" \
 --from <wallet_name> \
---fees 5550usei
 ```
 ### Show address validator
 ```Bash
