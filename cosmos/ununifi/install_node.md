@@ -41,10 +41,7 @@ go version
 cd $HOME
 git clone https://github.com/UnUniFi/chain chain_repo  
 cd chain_repo
-git checkout main
-git pull
 make install
-ununifid version
 ```
 ### Configuration of Shell Variables
 ```Bash
@@ -258,10 +255,10 @@ ununifid tx slashing unjail \
 ```
 ##### Delete node
 ```Bash
-sudo systemctl stop ununifid
-sudo systemctl disable ununifid
-sudo rm /etc/systemd/system/ununifid* -rf
-sudo rm $(which ununifid) -rf
-sudo rm $HOME/.ununifid* -rf
-sudo rm $HOME/ununifi -rf
+sudo systemctl stop cosmovisor
+sudo systemctl disable cosmovisor
+sudo rm /lib/systemd/system/cosmovisor* -rf
+sudo rm $(which cosmovisor) -rf
+sudo rm $HOME/.ununifi* -rf
+sudo rm $HOME/chain_repo -rf
 ```
