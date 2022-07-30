@@ -14,7 +14,6 @@ Install a few more packages and development tools
 ```Bash
 sudo apt install -y curl git screen build-essential libssl-dev libffi-dev python3-dev
 sudo apt-get install libgmp-dev
-sudo apt-get install libgmp-dev
 pip3 install fastecdsa
 sudo apt-get install -y pkg-config
 ```
