@@ -16,3 +16,24 @@ rly keys restore stride testkey "mnemonic words here"
 rly q balance gaia
 rly q balance stride
 ```
+
+```Bash
+paths:
+    stride-gaia:
+        src:
+            chain-id: STRIDE-TESTNET-2
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        dst:
+            chain-id: GAIA
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        src-channel-filter:
+            rule: allowlist
+            channel-list:
+                - channel-0
+                - channel-1
+                - channel-2
+                - channel-3
+                - channel-4
+```
