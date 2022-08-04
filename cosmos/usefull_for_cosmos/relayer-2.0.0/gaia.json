@@ -12,9 +12,5 @@
     "timeout": "10s",
     "output-format": "json",
     "sign-mode": "direct"
-    "strategy":
-    "type": "native"
-    "version": "ics20-1"
-    "order": "UNORDERED"
   }
 }
