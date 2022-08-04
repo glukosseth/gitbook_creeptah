@@ -37,3 +37,26 @@ paths:
                 - channel-3
                 - channel-4
 ```
+
+```Bash
+sudo tee /etc/systemd/system/rlyd.service > /dev/null <<EOF
+[Unit]
+Description=relayer_go
+After=network.target
+[Service]
+Type=simple
+User=$USER
+ExecStart=$(which rly) start stride-gaia --log-format logfmt --processor events
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=4096
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+```Bash
+sudo systemctl daemon-reload
+sudo systemctl enable rlyd
+sudo systemctl restart rlyd && sudo journalctl -u rlyd -f
+```
