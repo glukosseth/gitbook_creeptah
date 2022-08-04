@@ -7,8 +7,8 @@ Default config file location: ~/.relayer/config/config.yaml
 
 rly config init --memo "My custom memo"
 
-rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/gaia.json
-rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/stride.json
+rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/gaia.json gaia
+rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/stride.json stride
 
 rly keys restore gaia testkey "mnemonic words here"
 rly keys restore stride testkey "mnemonic words here"
