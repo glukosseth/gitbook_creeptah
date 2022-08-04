@@ -1,20 +1,16 @@
 {
   "type": "cosmos",
   "value": {
-    "key": "testkey",
+    "key": "default",
     "chain-id": "STRIDE-TESTNET-2",
     "rpc-addr": "http://154.12.236.153:25657",
     "account-prefix": "stride",
     "keyring-backend": "test",
     "gas-adjustment": 1.2,
-    "gas-prices": "0.01uatom",
-    "debug": false,
-    "timeout": "10s"
-    "output-format": "json"
-    "sign-mode": "sync"
-    "strategy":
-    "type": "naive"
-    "version": "ics20-1"
-    "order": "UNORDERED"
+    "gas-prices": "0.01ustrd",
+    "debug": true,
+    "timeout": "20s",
+    "output-format": "json",
+    "sign-mode": "direct"
   }
 }
