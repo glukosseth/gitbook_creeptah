@@ -93,7 +93,7 @@ rly paths list
 Verify that you have a healthy RPC address. \
 If
 ```Bash
--> chns(✔) clnts(✘) conn(✘)
+-> chns(✔) clnts(✔) conn(✔)
 ```
 
 ### Create service
