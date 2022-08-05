@@ -203,7 +203,7 @@ strided query bank balances <wallet_name>
 ```
 ##### Transfer funds
 ```Bash
-strided tx bank send <wallet_address> <to_wallet_address> 10000000ustride --chain-id STRIDE-TESTNET-2 -y
+strided tx bank send <wallet_address> <to_wallet_address> 10000000ustrd --chain-id STRIDE-TESTNET-2 -y
 ```
 ##### Voting
 ```Bash
@@ -211,15 +211,15 @@ strided tx gov vote <number_proposal> <yes/no> --from <wallet_name> --chain-id=S
 ```
 ##### Delegate stake
 ```Bash
-strided tx staking delegate <valoper_address> 10000000ustride --from=<wallet_name> --chain-id=STRIDE-TESTNET-2 --gas=auto
+strided tx staking delegate <valoper_address> 10000000ustrd --from=<wallet_name> --chain-id=STRIDE-TESTNET-2
 ```
 ##### Withdraw all rewards
 ```Bash
-strided tx distribution withdraw-all-rewards --from=<wallet_name> --chain-id=STRIDE-TESTNET-2 --gas=auto
+strided tx distribution withdraw-all-rewards --from=<wallet_name> --chain-id=STRIDE-TESTNET-2
 ```
 ##### Withdraw rewards with commision
 ```Bash
-strided tx distribution withdraw-rewards <valoper_address> --from=<wallet_name> --commission --chain-id=STRIDE-TESTNET-2 --gas=auto
+strided tx distribution withdraw-rewards <valoper_address> --from=<wallet_name> --commission --chain-id=STRIDE-TESTNET-2
 ```
 ##### Edit validator
 ```Bash
