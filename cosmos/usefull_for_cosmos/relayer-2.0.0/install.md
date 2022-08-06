@@ -53,8 +53,8 @@ rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/
 ```
 Restore key
 ```Bash
-rly keys restore gaia testkey "mnemonic words here"
-rly keys restore stride testkey "mnemonic words here"
+rly keys restore gaia default "mnemonic words here"
+rly keys restore stride default "mnemonic words here"
 ```
 Check balance
 ```Bash
