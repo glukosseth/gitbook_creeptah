@@ -48,8 +48,8 @@ rly config init --memo "My custom memo"
 ### Config app
 Set chains
 ```Bash
-rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/gaia.json gaia
-rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer-2.0.0/stride.json stride
+rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer_ibc_go_v.2.0.0/gaia.json
+rly chains add --url https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/relayer_ibc_go_v.2.0.0/stride.json
 ```
 Restore key
 ```Bash
