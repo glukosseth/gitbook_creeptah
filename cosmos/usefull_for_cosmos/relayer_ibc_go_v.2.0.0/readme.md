@@ -1,5 +1,8 @@
 # Relayer v.2.0.0
 
+##### Official documentation:
+> [Setup instructions](https://github.com/glukosseth/relayer-ibc-go)
+
 In IBC, blockchains do not directly pass messages to each other over the network. This is where relayer comes in. A relayer process monitors for updates on opens paths between sets of IBC enabled chains. The relayer submits these updates in the form of specific message types to the counterparty chain. Clients are then used to track and verify the consensus state.
 
 In addition to relaying packets, this relayer can open paths across chains, thus creating clients, connections and channels.
