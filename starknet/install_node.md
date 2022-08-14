@@ -90,6 +90,7 @@ To stop node tap `CTRL+c`, than `CTRL+a` and `d`
 Update bin
 ```Bash
 cd pathfinder
+rm -rf pathfinder
 git fetch
 ver=""
 git checkout $ver
