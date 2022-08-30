@@ -73,7 +73,7 @@ nano ~/.relayer/config/config.yaml
 paths:
     stride-gaia:
         src:
-            chain-id: STRIDE-TESTNET-2
+            chain-id: STRIDE-TESTNET-4
             client-id: 07-tendermint-0
             connection-id: connection-0
         dst:
