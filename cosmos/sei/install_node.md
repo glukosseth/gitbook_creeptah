@@ -233,7 +233,6 @@ seid tx staking edit-validator \
 ##### Unjail validator
 ```Bash
 seid tx slashing unjail \
-  --broadcast-mode=block \
   --from=<wallet_name> \
   --chain-id=atlantic-1 \
   --gas=auto
