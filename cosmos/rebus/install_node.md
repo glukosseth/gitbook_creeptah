@@ -1,4 +1,4 @@
-Rebus validator node
+Rebus mainnet validator node
 =
 ##### Official documentation:
 > [Validator setup instructions](https://github.com/rebuschain/rebus.mainnet/tree/master/reb_1111-1)
