@@ -2,7 +2,7 @@
 
 Rebus
 =
-Rebus
+Rebus is a regulated investment platform that uses a native utility coin, $REBUS, to allow a channel of asset managers and other financial institutions to manage and sell DeFi instruments along with their Traditional (TradFi) instruments.
 #
 web \
 twitter \
