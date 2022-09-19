@@ -170,7 +170,7 @@ EOF
 sudo systemctl daemon-reload && \
 sudo systemctl restart systemd-journald && \
 sudo systemctl enable rebusd && \
-sudo systemctl start rebusd && sudo journalctl -u rebusd -f -o cat
+sudo systemctl restart rebusd && sudo journalctl -u rebusd -f -o cat
 ```
 ### Check synchronization status ("catching_up": false is synced)
 ```Bash
