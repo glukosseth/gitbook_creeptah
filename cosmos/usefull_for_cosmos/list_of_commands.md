@@ -1,4 +1,4 @@
-# List of usefull command
+# List of usefull commands
 
 ### Check number of peers
 ```Bash
