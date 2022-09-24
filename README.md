@@ -2,6 +2,6 @@
 
 # Welcome to testnets guide from creeptah
 
-tg: @just_do_idea \
+tg: @creeptah \
 twitter: @just_do_idea \
 discord: Aleksei#7906
