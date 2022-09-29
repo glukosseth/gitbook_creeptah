@@ -3,5 +3,6 @@
 # Welcome to testnets guide from creeptah
 
 tg: @creeptah \
+web: creeptah.xyz \
 twitter: @just_do_idea \
 discord: Aleksei#7906
