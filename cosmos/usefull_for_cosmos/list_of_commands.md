@@ -9,3 +9,7 @@ curl -s http://localhost:26657/net_info | jq -r '.result.peers[] | "\(.node_info
 NODE_PRPC=$(grep -A 3 "\[rpc\]" ~/.<*>d/config/config.toml | egrep -o ":[0-9]+")
 sed -i.bak -e "s%^laddr = \"tcp://127.0.0.1:$(NODE_PRPC)\"%laddr = \"tcp://0.0.0.0:$(NODE_PRPC)\"%" $HOME/.<*>d/config/config.toml
 ```
+### Check unjail time
+```Bash
+<app>d q slashing signing-info $(<app>d tendermint show-validator)
+```
