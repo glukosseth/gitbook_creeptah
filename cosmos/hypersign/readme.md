@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/108256873/197976175-2ae95915-9ddf-4361-b6fd-dc8b47726936.png)
+![](https://user-images.githubusercontent.com/108256873/197976175-2ae95915-9ddf-4361-b6fd-dc8b47726936.png)
 
 Hypersign Protocol
 =
