@@ -68,4 +68,4 @@ You should see Metrics being visualized immediately.
 ![un10](https://user-images.githubusercontent.com/108256873/177983134-61ad46ae-2422-49f5-a70a-5beb78bd7a79.png)
 
 
-Link of Grafana Dashboard is [here](https://testnet-monitoring.creeptah.xyz) for example
+Link of Grafana Dashboard is [here](https://testnet-monitoring.creeptah.xyz) for example. Open dashboard in `Search`
