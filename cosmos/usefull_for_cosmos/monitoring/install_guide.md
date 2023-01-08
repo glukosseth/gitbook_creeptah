@@ -135,25 +135,15 @@ Restart service of your validator
 
 Install Grafana
 =
-Add Grafana gpg key which allows you to install signed packages
-```Bash
-sudo apt-get install -y gnupg2 curl software-properties-common
-curl https://packages.grafana.com/gpg.key | sudo apt-key add -
-```
-Install Grafana APT repository
-```Bash
-sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
-```
 Update your Apt repositories and install Grafana
 ```Bash
-sudo apt-get update
-sudo apt-get -y install grafana
+sudo apt-get install -y adduser libfontconfig1 && \
+wget https://dl.grafana.com/oss/release/grafana_8.0.6_amd64.deb && \
+sudo dpkg -i grafana_8.0.6_amd64.deb
 ```
 Start Grafana service
 ```Bash
-sudo systemctl enable --now grafana-server
-```
-Check service status
-```Bash
-sudo systemctl status grafana-server.service 
+sudo systemctl daemon-reload && \
+sudo systemctl enable grafana-server && \
+sudo systemctl restart grafana-server && sudo journalctl -u grafana-server -f 
 ```
