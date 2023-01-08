@@ -130,13 +130,9 @@ Enable prometheus. Configure `config.toml` and edit three options:
 
 ![u11](https://user-images.githubusercontent.com/108256873/177996020-44fc90fc-4c2b-4d5f-be7d-4e82a63ae65b.png)
 
-Restart service `ununifid`
-```Bash
-sudo systemctl restart ununifid
+Restart service of your validator
 
-# if installed cosmovisor
-sudo systemctl restart cosmovisor
-```
+
 Install Grafana
 =
 Add Grafana gpg key which allows you to install signed packages
