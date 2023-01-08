@@ -1,7 +1,7 @@
 ![un1](https://user-images.githubusercontent.com/108256873/177755485-69c968bf-93d3-419d-afef-7f240354daf8.png)
 
-# Monitor UnUniFi validator node with Grafana and Telegraf
-In this guide, we’re going to look at how to Monitor an UnUniFi validator node with Grafana and Telegraf.
+# Monitoring validator node with Grafana and Telegraf
+In this guide, we’re going to look at how to Monitor an validator node with Grafana and Telegraf.
 
 Telegraf is an agent written in Go for collecting performance metrics from the system it’s running on and the services running on that system. The collected metrics are output to InfluxDB or other supported data stores. From InfluxDB, you should be able to visualize trends and systems performance using tools like Grafana.
 
@@ -53,7 +53,7 @@ Under InfluxDB Details, provide:
 
 Once the data source has been added, the next thing is to import the dashboard. I customized one of the dashboards initially created by a user on the community and uploaded it.
 
-Download the dashboard from [here](https://github.com/glukosseth/testnet_guide/blob/main/cosmos/usefull_for_cosmos/monitoring/ununifi.json), it is in JSON format. The head over to `Create > Import`:
+Download the dashboard from [here](https://raw.githubusercontent.com/glukosseth/testnet_guide/main/cosmos/usefull_for_cosmos/monitoring/cosmos.json), it is in JSON format. The head over to `Create > Import`:
 
 ![un7](https://user-images.githubusercontent.com/108256873/177771367-2c3bf456-fdef-4bf4-a036-b744141b7b4c.png)
 
@@ -67,14 +67,5 @@ You should see Metrics being visualized immediately.
 
 ![un10](https://user-images.githubusercontent.com/108256873/177983134-61ad46ae-2422-49f5-a70a-5beb78bd7a79.png)
 
-## 3. Parameters
 
-You can deploy your own database or use *[creeptah.team]* database for `telegraf.conf`:
-
-- <node_name>: name of UnUniFi Validator
-- <grafana_ip>: `45.140.146.29:8086`
-- <database_name>: `ununifi_db`
-- <database_login>: `ununifi`
-- <database_password>: `ununifi`
-
-Link for Grafana Dashboard is [here](http://45.140.146.29:3000/d/Z-2kYJe7z/ununifi?orgId=3&refresh=5s)
+Link of Grafana Dashboard is [here](https://testnet-monitoring.creeptah.xyz) for example
