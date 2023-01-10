@@ -123,7 +123,7 @@ Once all changes have been made, you can restart the telegraf service
 ```Bash
 sudo systemctl restart telegraf && sudo journalctl -u telegraf -f -o cat
 ```
-Enable `Prometheus` in your validator node. Configure `config.toml` and edit three options:
+Enable Prometheus in your validator node. Configure `config.toml` and edit three options:
 - prometheus = true
 - prometheus_listen_addr = “127.0.0.1:26660” 
 - namespace = “tendermint”
