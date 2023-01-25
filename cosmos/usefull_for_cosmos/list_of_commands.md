@@ -10,6 +10,10 @@ curl -s localhost:26657/consensus_state | jq '.result.round_state.height_vote_se
 ```Bash
 <app>d q slashing signing-info $(<app>d tendermint show-validator)
 ```
+#### Export private key
+```Bash
+<app>d keys export <name_wallet> --unarmored-hex --unsafe
+```
 
 ## Peers
 
