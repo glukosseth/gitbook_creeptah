@@ -14,6 +14,19 @@ curl -s localhost:26657/consensus_state | jq '.result.round_state.height_vote_se
 ```Bash
 <app>d keys export <name_wallet> --unarmored-hex --unsafe
 ```
+#### List active validatirs
+```Bash
+<app>d q staking validators -o json --limit=1000 \
+| jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' \
+| jq -r '.tokens + " - " + .description.moniker' | sort -gr | nl
+```
+#### List not active validatirs
+```Bash
+<app>d q staking validators -o json --limit=1000 \
+| jq '.validators[] | select(.status=="BOND_STATUS_UNBONDED" or .status=="BOND_STATUS_UNBONDING")' \
+| jq -r '.tokens + " - " + .description.moniker' \
+| sort -gr | nl
+```
 
 ## Peers
 
