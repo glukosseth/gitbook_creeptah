@@ -5,4 +5,4 @@
 tg: @creeptah \
 web: creeptah.xyz \
 twitter: @just_do_idea \
-discord: Aleksei#7906
+discord: 0xGlukoss
