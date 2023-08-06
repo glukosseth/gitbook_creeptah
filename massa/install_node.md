@@ -1,7 +1,7 @@
 # Massa node
 
 ##### Official documentation:
-> [Validator setup instructions](https://docs.massa.net/en/latest/testnet/install.html)
+> [Validator setup instructions](https://docs.massa.net/docs/node/install)
 ##### Explorer:
 > https://massa.net/testnet/
 
