@@ -1,2 +1,0 @@
-# Charon Distributed Validator Node
-

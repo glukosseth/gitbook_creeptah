@@ -1,2 +1,0 @@
-# masa\_finance
-
