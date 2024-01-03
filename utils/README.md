@@ -1,2 +1,2 @@
-# usefull\_for\_cosmos
+# usefull utils
 
