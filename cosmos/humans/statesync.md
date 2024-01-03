@@ -1,4 +1,4 @@
-Instructions
+Statesync instructions
 =
 ### Get state sync information
 ```bash
