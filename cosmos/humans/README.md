@@ -1,4 +1,4 @@
-
+![crop](https://github.com/glukosseth/gitbook_creeptah/assets/108256873/f710839f-e371-4acb-a7bd-8c913959d626)
 
 Humans
 =
@@ -23,11 +23,11 @@ Humans is Blockchain of AIs. It is the first blockchain network from the Cosmos 
 - grpc `https://humans-grpc.creeptah.xyz`
 
 [explorer](https://explorer.creeptah.xyz/humans) | 
-[install mainnet]() |
-[install testnet]() |
-[statesync]() |
-[upgrade]() |
-[commands]()
+[install mainnet](https://github.com/glukosseth/gitbook_creeptah/blob/main/cosmos/humans/install_mainnet.md) |
+[install testnet](https://github.com/glukosseth/gitbook_creeptah/blob/main/cosmos/humans/install_testnet.md) |
+[statesync](https://github.com/glukosseth/gitbook_creeptah/blob/main/cosmos/humans/statesync.md) |
+[upgrade](https://github.com/glukosseth/gitbook_creeptah/blob/main/cosmos/humans/upgrade_mainnet.md) |
+[commands](https://github.com/glukosseth/gitbook_creeptah/blob/main/cosmos/humans/commands.md)
 #
 ### Social links:
 [web](https://humans.ai/) |
