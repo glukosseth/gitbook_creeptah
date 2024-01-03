@@ -1,4 +1,4 @@
-Humans mainnet validator node
+Humans testnet validator node
 =
 |Chain id|Latest app ver.|Cosmos SDK ver.|go ver.|Wasm|
 |:------:|:-------------:|:-------------:|:-----:|:--:|
